@@ -175,7 +175,8 @@ The nRF24L01 scanner has some important constraints:
 - Avoid channels showing >20% consistent activity
 
 ## References
-https://coffeebreakpoint.com/micropython/how-to-connect-a-nrf24l01-transceiver-to-your-raspberry-pi-pico/
+- https://coffeebreakpoint.com/micropython/how-to-connect-a-nrf24l01-transceiver-to-your-raspberry-pi-pico/
+- https://github.com/orgs/micropython/discussions/10155
 ---
 
 *This scanner turns the simple nRF24L01 into a powerful tool for understanding your local 2.4GHz wireless environment!*
