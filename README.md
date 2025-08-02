@@ -29,9 +29,9 @@ It's mostly these:
 and some of the initial delays. Yes, the product is now weakened version BUT I get to play w/the toy now :).
 I also tried a 10 µF and 47 µF capacitor between VCC/GND on each module.  47 µF seemed to work best.
 
-Just my experience - I have about 24 hours worth of 'expertise',  So grain of salt here.
+Just my experience - I have about 24 hours worth of 'expertise',  so grain of salt here.
 
-Being curious I asked Claude to write a scanner. It's here as 'scan.py'. So grain of salt here, but seem to work well.
+Being curious I asked Claude to write a scanner. It's here as 'scan.py'. So grain of salt here, but seems to work well.
 
 
 
