@@ -15,9 +15,7 @@ The ones that did work  had  mapping of the gpios on them:<BR>
 The ones that did not were just blank:<BR>
 <img width="320" height="426" alt="image" src="https://github.com/user-attachments/assets/d00b239c-ebd1-43fc-ad93-b9ab507850bf" />
 
-Only problem is each listing on the site showed them as blank and I don't see a way to order 'the good ones'. <BR>
-That being the case, when  I tried to use the ones that were working I only  ot  about 25% success transmission at first -- at about 12-18 inches distance.<P>
-With help of Claude AI,  I was able to come up with some optimizations that got them  working to a place of about 75%-85% successful transmissions 
+Only problem is each listing on the site showed them as blank and I don't see a way to order 'the good ones'. That being the case, when  I tried to use the ones that were working I only  ot  about 25% success transmission at first -- at about 12-18 inches distance. With help of Claude AI,  I was able to come up with some optimizations that got them  working to a place of about 75%-85% successful transmissions 
 <P></P>
 I hope this information helps.  The code and the optimizations are included as `nrf24_tuned_test.py`.
 <P>
