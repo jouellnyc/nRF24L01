@@ -170,7 +170,6 @@ The nRF24L01 scanner has some important constraints:
 
 - Use 100ms sampling duration for reliable detection
 - Run multiple scans to see activity patterns over time
-- Channels 75-125 often have less interference
 - Space multiple nRF24L01 networks 2-3 channels apart
 - Avoid channels showing >20% consistent activity
 
