@@ -1,8 +1,42 @@
 # nRF24L01 Notes and (AI RF Scanner)
-
 A MicroPython-based spectrum analyzer using the nRF24L01 transceiver to scan and monitor 2.4GHz wireless activity.
 
-## What It Does
+## A Curious Adventure
+
+I came across these modules to use in a project and tryed to get them  installed and working. I bought about six of them from AliExpress.  
+Cheap, some $1, some 50 cents US. Having not used these I always keep risk low the first time.  :)
+
+It turns out that some of them were definitely "counterfeit" and it appears that some were "legitimate". 
+I'm using those terms loosely --  that is to say some of them worked and some of them straight up didn't. 
+
+The ones that did work  had  mapping of the gpios on them:
+<img width="320" height="426" alt="image" src="https://github.com/user-attachments/assets/9dcd3857-6e33-4ec6-8590-af6879ef0bb0" />
+
+The ones that did not were just blank:
+<img width="320" height="426" alt="image" src="https://github.com/user-attachments/assets/d00b239c-ebd1-43fc-ad93-b9ab507850bf" />
+
+
+Only problem is each listing on the site showed them as blank and I don't see a way to order 'the good ones'. 
+That being the case, when  I tried to use the ones that were working I only  ot  about 25% success transmission at first -- at about 12-18 inches distance. With help of Claude AI,  I was able to come up with some optimizations that got them  working to a place of about 75%-85% successful transmissions 
+
+I hope this information helps.  The code and the optimizations are included as `nrf24_tuned_test.py`
+It's mostly these:
+
+```
+ nrf.reg_write(0x06, 0x27)  # RF_SETUP: 250kbps, 0dBm power 
+ nrf.reg_write(0x01, 0x00)  # Disable auto-ack on all pipes
+ nrf.reg_write(0x04, 0xFF)  # SETUP_RETR: max delay, 15 retries
+```
+and some of the initial delays. Yes, the product is now weakened version BUT I get to play w/the toy now :).
+I also tried a 10 µF and 47 µF capacitor between VCC/GND on each module.  47 µF seemed to work best.
+
+Just my experience - I have about 24 hours worth of 'expertise',  So grain of salt here.
+
+Being curious I asked Claude to write a scanner. It's here as 'scan.py'. So grain of salt here, but seem to work well.
+
+
+
+## What scan.py Does
 
 This scanner turns your nRF24L01 module into a simple spectrum analyzer for the 2.4GHz ISM band, detecting RF activity from various wireless devices without decoding their actual data.
 
