@@ -3,7 +3,7 @@ A MicroPython-based spectrum analyzer using the nRF24L01 transceiver to scan and
 
 ## A Curious Adventure
 
-I came across these modules to use in a project and tryed to get them installed and working. I bought about six of them from AliExpress.<BR>
+I came across these modules to use in a project and tryed to get them installed and working. I bought six of them from AliExpress.<BR>
 Cheap, some $1, some 50 cents US. Having not used these I always keep risk low the first time.  :)
 <P>
 It turns out that some of them were definitely "counterfeit" and it appears that some were "legitimate". <BR>
