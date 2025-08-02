@@ -31,6 +31,26 @@ I also tried a 10 µF and 47 µF capacitor between VCC/GND on each module.  47 �
 
 Just my experience - I have about 24 hours worth of 'expertise',  so grain of salt here.
 
+## Hardware Requirements
+
+- ESP32, Raspberry Pi Pico, or any MicroPython-compatible microcontroller
+- [nRF24L01 transceiver module](https://www.google.com/search?q=nrf24l01+aliexpress)
+- Jumper wires for connections
+
+### Wiring
+
+```
+nRF24L01 -> Microcontroller
+VCC -> 3.3V
+GND -> GND
+CE  -> GPIO 6
+CSN -> GPIO 5
+SCK -> GPIO 2
+MOSI-> GPIO 3
+MISO-> GPIO 4
+```
+
+
 Being curious I asked Claude to write a scanner. It's here as 'scan.py'. So grain of salt here, but seems to work well.
 
 
@@ -56,24 +76,6 @@ This scanner turns your nRF24L01 module into a simple spectrum analyzer for the 
 - **Real-time Monitoring**: Continuous scanning with configurable sample duration
 - **Signal Strength**: RSSI readings for detected activity
 
-## Hardware Requirements
-
-- ESP32, Raspberry Pi Pico, or any MicroPython-compatible microcontroller
-- nRF24L01 transceiver module
-- Jumper wires for connections
-
-### Wiring
-
-```
-nRF24L01 -> Microcontroller
-VCC -> 3.3V
-GND -> GND
-CE  -> GPIO 6
-CSN -> GPIO 5
-SCK -> GPIO 2
-MOSI-> GPIO 3
-MISO-> GPIO 4
-```
 
 ## Usage
 
